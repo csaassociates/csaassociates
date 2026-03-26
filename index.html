@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 60px;
+    padding: 20px 80px;
     background: #0A1F44;
 }
 
@@ -33,43 +33,45 @@ header {
 }
 
 .logo img {
-    height: 55px;
+    height: 60px;
     margin-right: 12px;
 }
 
 nav a {
     color: white;
-    margin-left: 25px;
+    margin-left: 30px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav a:hover { color: gold; }
 
 /* HERO */
 .hero {
-    padding: 120px 20px;
+    padding: 130px 20px;
     text-align: center;
     background: linear-gradient(135deg, #0A1F44, #1f3c88);
     color: white;
 }
 
-.hero h1 { font-size: 42px; }
+.hero h1 { font-size: 44px; }
 
 .cta button {
     margin-top: 25px;
-    padding: 14px 28px;
+    padding: 15px 30px;
     background: gold;
     border: none;
+    font-weight: bold;
     cursor: pointer;
 }
 
 /* SECTIONS */
-.section { padding: 70px 20px; text-align: center; }
+.section { padding: 80px 20px; text-align: center; }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 30px;
     margin-top: 40px;
 }
 
@@ -78,13 +80,24 @@ nav a:hover { color: gold; }
     border-radius: 10px;
     background: #fff;
     border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 /* CTA */
 .final-cta {
     background: #0A1F44;
     color: white;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 /* CONTACT */
@@ -99,7 +112,8 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    font-size: 14px;
 }
 
 /* WHATSAPP */
@@ -148,36 +162,63 @@ footer {
 <section class="section" id="services">
     <h2>Our Services</h2>
     <div class="grid">
-        <div class="card"><h4>SEBI Compliance</h4><p>Listing & regulatory compliance advisory.</p></div>
-        <div class="card"><h4>NBFC Advisory</h4><p>RBI compliance & registration services.</p></div>
-        <div class="card"><h4>FEMA Advisory</h4><p>Foreign investment & FEMA compliance.</p></div>
-        <div class="card"><h4>FCRA Advisory</h4><p>Registration & compliance assistance.</p></div>
-        <div class="card"><h4>Restructuring</h4><p>Mergers, demergers & structuring.</p></div>
-        <div class="card"><h4>Secretarial Audit</h4><p>Compliance audit & due diligence.</p></div>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h4>SEBI Compliance</h4>
+            <p>Listing & regulatory compliance advisory.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🏦</div>
+            <h4>NBFC Advisory</h4>
+            <p>RBI compliance & registration services.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h4>FEMA Advisory</h4>
+            <p>Foreign investment & FEMA compliance.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📜</div>
+            <h4>FCRA Advisory</h4>
+            <p>Registration & compliance assistance.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🔄</div>
+            <h4>Restructuring</h4>
+            <p>Mergers, demergers & structuring.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📑</div>
+            <h4>Secretarial Audit</h4>
+            <p>Compliance audit & due diligence.</p>
+        </div>
     </div>
 </section>
 
 <section class="section" id="about">
     <h2>About Us</h2>
-    <p>CSA & Associates is a Practicing Company Secretary firm specializing in corporate laws, SEBI regulations, and RBI advisory. We help businesses navigate regulatory frameworks with precision and confidence.</p>
+    <p>
+        CSA & Associates is a Practicing Company Secretary firm specializing in corporate laws, SEBI regulations, and RBI advisory. 
+        We provide strategic, reliable, and confidential advisory services to businesses navigating complex regulatory environments. 
+        Trusted by clients for precision, professionalism, and timely compliance.
+    </p>
 </section>
 
 <section class="section">
     <h2>Why Choose Us</h2>
     <div class="grid">
-        <div class="card">Expertise</div>
-        <div class="card">Timely Compliance</div>
+        <div class="card">Deep Regulatory Expertise</div>
+        <div class="card">Timely & Accurate Compliance</div>
         <div class="card">Confidential Advisory</div>
         <div class="card">End-to-End Support</div>
     </div>
 </section>
 
 <section class="final-cta">
-    <h2>Need Expert Guidance?</h2>
+    <h2>Need Expert Guidance on Corporate & Regulatory Matters?</h2>
     <button onclick="window.location='#contact'">Talk to Our Experts</button>
 </section>
 
-<!-- WORKING CONTACT FORM -->
 <section class="section contact" id="contact">
     <h2>Contact CSA & Associates</h2>
 
@@ -187,14 +228,13 @@ footer {
         <input type="tel" name="Phone" placeholder="Your Phone Number" required>
         <textarea name="Message" placeholder="Your Message" required></textarea>
 
-        <input type="hidden" name="_subject" value="New Enquiry - CSA Website">
-
         <button type="submit">Submit Enquiry</button>
     </form>
 </section>
 
 <footer>
     © 2026 CSA & Associates | Company Secretaries  
+    <br>All Rights Reserved
 </footer>
 
 <a class="whatsapp" href="https://wa.me/918755916273" target="_blank">Chat</a>
