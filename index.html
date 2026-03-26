@@ -54,22 +54,27 @@ nav a:hover { color: gold; }
     color: white;
 }
 
-.hero h1 { font-size: 44px; }
+.hero h1 { 
+    font-size: 44px; 
+    letter-spacing: 0.5px;
+}
 
-.cta button {
+/* BUTTONS */
+.cta button, .final-cta button {
     margin-top: 25px;
     padding: 15px 30px;
     background: gold;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
-/* CTA HOVER */
-.cta button:hover {
+.cta button:hover, .final-cta button:hover {
     background: white;
     color: #0A1F44;
+    transform: translateY(-2px);
 }
 
 /* SECTIONS */
@@ -87,16 +92,16 @@ nav a:hover { color: gold; }
     border-radius: 10px;
     background: #fff;
     border: 1px solid #eee;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.12);
 }
 
 .icon {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -107,19 +112,12 @@ nav a:hover { color: gold; }
     padding: 80px 20px;
 }
 
-.final-cta button {
-    padding: 15px 30px;
-    background: gold;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 /* CONTACT */
 .contact input, .contact textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
+    border: 1px solid #ccc;
 }
 
 .contact button {
@@ -137,6 +135,7 @@ footer {
     text-align: center;
     padding: 25px;
     font-size: 14px;
+    line-height: 1.6;
 }
 
 /* WHATSAPP */
