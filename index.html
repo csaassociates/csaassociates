@@ -3,156 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSA & Associates</title>
+
+<title>CSA & Associates | Corporate Compliance Advisory</title>
+
+<meta name="description" content="Corporate, SEBI, FEMA and compliance advisory services for startups, listed entities and businesses in India.">
+<meta name="keywords" content="SEBI compliance, FEMA advisory, Company Secretary services, IPO compliance, NBFC compliance">
 
 <style>
-html { scroll-behavior: smooth; }
-
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    color: #222;
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#ffffff;
+    color:#1A1A1A;
 }
 
 /* HEADER */
 header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background: #0A1F44;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 90px;
+    background:#0A1F44;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: bold;
+    display:flex;
+    align-items:center;
 }
 
 .logo img {
-    height: 60px;
-    margin-right: 12px;
+    height:50px;
+    background:white;
+    padding:5px;
+    border-radius:8px;
+    margin-right:12px;
 }
 
 nav a {
-    color: white;
-    margin-left: 30px;
-    text-decoration: none;
-    transition: 0.3s;
+    color:white;
+    margin-left:30px;
+    text-decoration:none;
+    font-size:14px;
 }
-
-nav a:hover { color: gold; }
 
 /* HERO */
 .hero {
-    padding: 130px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #0A1F44, #1f3c88);
-    color: white;
+    background:linear-gradient(135deg,#0A1F44,#1d3c85);
+    color:white;
+    padding:150px 20px;
+    text-align:center;
 }
 
-.hero h1 { 
-    font-size: 44px; 
-    letter-spacing: 0.5px;
+.hero h1 {
+    font-size:48px;
+}
+
+.hero p {
+    font-size:18px;
+    margin-top:10px;
+}
+
+.gold-line {
+    width:80px;
+    height:3px;
+    background:#C9A646;
+    margin:25px auto;
+}
+
+.trust {
+    font-size:14px;
+    opacity:0.9;
+    line-height:1.8;
 }
 
 /* BUTTONS */
-.cta button, .final-cta button {
-    margin-top: 25px;
-    padding: 15px 30px;
-    background: gold;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+.hero button {
+    margin:15px;
+    padding:14px 28px;
+    background:#C9A646;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.cta button:hover, .final-cta button:hover {
-    background: white;
-    color: #0A1F44;
-    transform: translateY(-2px);
+.hero button.secondary {
+    background:white;
+    color:#0A1F44;
 }
 
-/* SECTIONS */
-.section { padding: 80px 20px; text-align: center; }
+/* SECTION */
+.section {
+    padding:100px 10%;
+    text-align:center;
+}
+
+.dark-section {
+    background:#0A1F44;
+    color:white;
+}
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
+/* CARDS */
 .card {
-    padding: 25px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
+    background:#ffffff;
+    color:#1A1A1A;
+    padding:28px;
+    border-radius:14px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+    position:relative;
+    transition:0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.12);
+    transform:translateY(-8px);
 }
 
-.icon {
-    font-size: 32px;
-    margin-bottom: 10px;
+.card::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:#C9A646;
 }
 
-/* CTA */
-.final-cta {
-    background: #0A1F44;
-    color: white;
-    padding: 80px 20px;
+.card b {
+    display:block;
+    color:#0A1F44;
+    margin-bottom:10px;
+    font-size:16px;
 }
 
 /* CONTACT */
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+.contact-section {
+    background:#f4f6fb;
 }
 
-.contact button {
-    padding: 12px 25px;
-    background: #0A1F44;
-    color: white;
-    border: none;
-    cursor: pointer;
+.contact-box {
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
+input, textarea {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+}
+
+button.submit {
+    background:#0A1F44;
+    color:white;
+    padding:12px 25px;
+    border:none;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    padding: 12px 18px;
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    header { flex-direction: column; }
+    background:#0A1F44;
+    color:white;
+    text-align:center;
+    padding:40px;
 }
 </style>
 </head>
@@ -160,83 +185,142 @@ footer {
 <body>
 
 <header>
-    <div class="logo">
-        <img src="Logo.png">
-        <h3>CSA & Associates</h3>
-    </div>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<div class="logo">
+<img src="Logo.png" alt="CSA Logo">
+<h3>CSA & Associates</h3>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <h1>CSA & Associates – Strategic Corporate & Regulatory Advisory</h1>
-    <p>Experts in SEBI, RBI, NBFC, FEMA & Corporate Law Compliance</p>
-    <div class="cta">
-        <button onclick="window.location='#contact'">Schedule a Consultation</button>
-    </div>
-    <p><i>Trusted advisory partner for corporate, regulatory and compliance matters</i></p>
+<h1>SEBI, FEMA & Corporate Compliance Advisory</h1>
+<p>Supporting startups, listed entities and businesses in regulatory and compliance matters.</p>
+
+<div class="gold-line"></div>
+
+<p class="trust">
+✔ Advisory in SEBI & FEMA Laws <br>
+✔ Services for Startups and Listed Entities <br>
+✔ End-to-End Compliance Support
+</p>
+
+<button onclick="location.href='#contact'">Schedule Consultation</button>
+<button class="secondary" onclick="window.open('https://wa.me/918755916273')">Chat on WhatsApp</button>
 </section>
 
-<section class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="grid">
-        <div class="card"><div class="icon">📊</div><h4>SEBI Compliance</h4><p>Listing & regulatory compliance advisory.</p></div>
-        <div class="card"><div class="icon">🏦</div><h4>NBFC Advisory</h4><p>RBI compliance & registration services.</p></div>
-        <div class="card"><div class="icon">🌍</div><h4>FEMA Advisory</h4><p>Foreign investment & FEMA compliance.</p></div>
-        <div class="card"><div class="icon">📜</div><h4>FCRA Advisory</h4><p>Registration & compliance assistance.</p></div>
-        <div class="card"><div class="icon">🔄</div><h4>Restructuring</h4><p>Mergers, demergers & structuring.</p></div>
-        <div class="card"><div class="icon">📑</div><h4>Secretarial Audit</h4><p>Compliance audit & due diligence.</p></div>
-    </div>
+<!-- SERVICES -->
+<section class="section dark-section" id="services">
+<h2>Specialized Advisory Services</h2>
+<p>Focused services for regulated and growth-oriented businesses</p>
+
+<div class="grid">
+
+<div class="card">
+<b>Corporate & Secretarial Compliance</b>
+<p>Support in ROC filings, board and shareholder meetings, and statutory compliance requirements.</p>
+</div>
+
+<div class="card">
+<b>ROC & XBRL Compliance</b>
+<p>Handling of annual filings, event-based filings and XBRL requirements under applicable laws.</p>
+</div>
+
+<div class="card">
+<b>Income Tax & GST</b>
+<p>Assistance in tax filings, GST compliance and regulatory requirements.</p>
+</div>
+
+<div class="card">
+<b>Company Incorporation</b>
+<p>Incorporation of Private, Public, Section 8 and other entities with end-to-end support.</p>
+</div>
+
+<div class="card">
+<b>Conversion of Entities</b>
+<p>Conversion of LLP, Partnership Firms and Societies into Companies including compliance and approvals.</p>
+</div>
+
+<div class="card">
+<b>IPO & SEBI Compliance</b>
+<p>Support in pre and post listing compliances and SEBI regulatory requirements as applicable.</p>
+</div>
+
+<div class="card">
+<b>FEMA & RBI Advisory</b>
+<p>Advisory on foreign investments, FEMA regulations and cross-border transactions.</p>
+</div>
+
+<div class="card">
+<b>Corporate Restructuring</b>
+<p>Support in mergers, demergers and restructuring transactions.</p>
+</div>
+
+<div class="card">
+<b>Secretarial Audit & Due Diligence</b>
+<p>Conducting compliance audits and due diligence reviews.</p>
+</div>
+
+<div class="card">
+<b>IBC & Insolvency Services</b>
+<p>Support in CIRP, liquidation and insolvency related processes.</p>
+</div>
+
+</div>
 </section>
 
-<section class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-        CSA & Associates is a Practicing Company Secretary firm specializing in corporate laws, SEBI regulations, and RBI advisory. 
-        We provide strategic, reliable, and confidential advisory services to businesses navigating complex regulatory environments. 
-        Trusted by clients for precision, professionalism, and timely compliance.
-    </p>
-</section>
-
+<!-- WHY US -->
 <section class="section">
-    <h2>Why Choose Us</h2>
-    <div class="grid">
-        <div class="card">Deep Regulatory Expertise</div>
-        <div class="card">Timely & Accurate Compliance</div>
-        <div class="card">Confidential Advisory</div>
-        <div class="card">End-to-End Support</div>
-    </div>
+<h2>Why CSA & Associates</h2>
+
+<div class="grid">
+
+<div class="card">
+<b>Focused Practice Areas</b>
+<p>Engaged in SEBI, FEMA and corporate law advisory services.</p>
+</div>
+
+<div class="card">
+<b>Practical Approach</b>
+<p>Solutions aligned with regulatory requirements and business needs.</p>
+</div>
+
+<div class="card">
+<b>End-to-End Assistance</b>
+<p>Support across incorporation, compliance and ongoing advisory.</p>
+</div>
+
+</div>
 </section>
 
-<section class="final-cta">
-    <h2>Need Expert Guidance on Corporate & Regulatory Matters?</h2>
-    <button onclick="window.location='#contact'">Talk to Our Experts</button>
-</section>
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+<h2>Contact Us</h2>
 
-<section class="section contact" id="contact">
-    <h2>Contact CSA & Associates</h2>
+<p>Reach out for a consultation. We typically respond within 24 hours.</p>
+<p><b>Call:</b> 8755916273</p>
 
-    <form action="https://formspree.io/f/mlgoddwb" method="POST">
-        <input type="text" name="Name" placeholder="Your Name" required>
-        <input type="email" name="Email" placeholder="Your Email" required>
-        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
-        <textarea name="Message" placeholder="Your Message" required></textarea>
+<div class="contact-box">
+<form action="https://formspree.io/f/mlgoddwb" method="POST">
+<input type="text" name="Name" placeholder="Name" required>
+<input type="email" name="Email" placeholder="Email" required>
+<input type="tel" name="Phone" placeholder="Phone">
+<textarea name="Message" placeholder="Message"></textarea>
+<button class="submit" type="submit">Submit</button>
+</form>
+</div>
 
-        <button type="submit">Submit Enquiry</button>
-    </form>
 </section>
 
 <footer>
-    © 2026 CSA & Associates | Company Secretaries <br>
-    Email: csagarwal.associates@gmail.com | Phone: 8755916273 <br>
-    All Rights Reserved
+<p>© 2026 CSA & Associates. All Rights Reserved.</p>
+<p>Email: csagarwal.associates@gmail.com | Phone: 8755916273</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/918755916273" target="_blank">Chat</a>
 
 </body>
 </html>
